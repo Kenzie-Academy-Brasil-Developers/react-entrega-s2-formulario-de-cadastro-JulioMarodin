@@ -1,0 +1,13 @@
+.home {
+  transform: translateX(-50%);
+  margin-left: 50%;
+}
+
+/* .divHome {
+  margin: 0 auto;
+} */
+
+.buttonHome {
+  margin-top: 5px;
+  margin-left: 15px;
+}

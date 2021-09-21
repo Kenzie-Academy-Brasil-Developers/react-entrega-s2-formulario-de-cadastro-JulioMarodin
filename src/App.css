@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  margin-top: 100px;
+}
+
+.divForm {
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.divButton {
+  margin: 0 auto;
+  margin-top: 5px;
+}
