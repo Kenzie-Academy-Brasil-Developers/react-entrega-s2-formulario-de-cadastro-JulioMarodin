@@ -1,12 +1,13 @@
 import { Button } from '@material-ui/core';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import './styles.css';
 
-const Home = ({ name }) => {
+const Home = () => {
+  const { user } = useParams();
   const history = useHistory();
   return (
     <div className="home">
-      <div className="divHome">Bem vindo {name}!</div>
+      <div className="divHome">Bem vindo {user}!</div>
       <div className="buttonHome">
         <Button
           onClick={() => history.push('/')}

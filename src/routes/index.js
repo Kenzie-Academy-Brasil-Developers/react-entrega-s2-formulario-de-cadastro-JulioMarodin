@@ -8,8 +8,8 @@ const Routes = ({ name, setName }) => {
       <Route exact path="/">
         <Register setName={setName} />
       </Route>
-      <Route path="/home">
-        <Home name={name} />
+      <Route path="/home/:user">
+        <Home />
       </Route>
     </Switch>
   );

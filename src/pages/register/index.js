@@ -32,7 +32,7 @@ const Register = ({ setName }) => {
   const handleForm = (data) => {
     console.log(data);
     setName(data.name);
-    history.push('/home');
+    history.push(`/home/${data.name}`);
   };
 
   return (
@@ -65,6 +65,7 @@ const Register = ({ setName }) => {
         <div>
           <TextField
             label="Password"
+            type="password"
             margin="normal"
             variant="outlined"
             size="small"
@@ -77,6 +78,7 @@ const Register = ({ setName }) => {
         <div>
           <TextField
             label="Confirm password"
+            type="password"
             margin="normal"
             variant="outlined"
             size="small"
