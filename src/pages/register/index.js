@@ -36,65 +36,63 @@ const Register = ({ setName }) => {
   };
 
   return (
-    <div className="divForm">
-      <form onSubmit={handleSubmit(handleForm)}>
-        <div>
-          <TextField
-            label="Name"
-            margin="normal"
-            variant="outlined"
-            size="small"
-            color="primary"
-            {...register('name')}
-            error={!!errors.name}
-            helperText={errors.name?.message}
-          />
-        </div>
-        <div>
-          <TextField
-            label="Email"
-            margin="normal"
-            variant="outlined"
-            size="small"
-            color="primary"
-            {...register('email')}
-            error={!!errors.email}
-            helperText={errors.email?.message}
-          />
-        </div>
-        <div>
-          <TextField
-            label="Password"
-            type="password"
-            margin="normal"
-            variant="outlined"
-            size="small"
-            color="primary"
-            {...register('password')}
-            error={!!errors.password}
-            helperText={errors.password?.message}
-          />
-        </div>
-        <div>
-          <TextField
-            label="Confirm password"
-            type="password"
-            margin="normal"
-            variant="outlined"
-            size="small"
-            color="primary"
-            {...register('confirmPassword')}
-            error={!!errors.confirmPassword}
-            helperText={errors.confirmPassword?.message}
-          />
-        </div>
-        <div className="divButton">
-          <Button type="submit" variant="contained" color="primary">
-            Cadastrar
-          </Button>
-        </div>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit(handleForm)}>
+      <div>
+        <TextField
+          label="Name"
+          margin="normal"
+          variant="outlined"
+          size="small"
+          color="primary"
+          {...register('name')}
+          error={!!errors.name}
+          helperText={errors.name?.message}
+        />
+      </div>
+      <div>
+        <TextField
+          label="Email"
+          margin="normal"
+          variant="outlined"
+          size="small"
+          color="primary"
+          {...register('email')}
+          error={!!errors.email}
+          helperText={errors.email?.message}
+        />
+      </div>
+      <div>
+        <TextField
+          label="Password"
+          type="password"
+          margin="normal"
+          variant="outlined"
+          size="small"
+          color="primary"
+          {...register('password')}
+          error={!!errors.password}
+          helperText={errors.password?.message}
+        />
+      </div>
+      <div>
+        <TextField
+          label="Confirm password"
+          type="password"
+          margin="normal"
+          variant="outlined"
+          size="small"
+          color="primary"
+          {...register('confirmPassword')}
+          error={!!errors.confirmPassword}
+          helperText={errors.confirmPassword?.message}
+        />
+      </div>
+      <div className="divButton">
+        <Button type="submit" variant="contained" color="primary">
+          Cadastrar
+        </Button>
+      </div>
+    </form>
   );
 };
 

@@ -3,14 +3,11 @@
   margin-top: 100px;
 }
 
-.divForm {
-  margin: 0 auto;
-  width: 235px;
-}
-
 form {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  width: 235px;
 }
 
 .divButton {
